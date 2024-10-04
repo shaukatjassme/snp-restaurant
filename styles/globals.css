@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import slick carousel css */
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Futurak';
+  src: url('/fonts/futurak.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Apercu';
+  src: url('/fonts/Apercu Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Butler';
+  src: url('/fonts/Butler_Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* You can define different weights and styles similarly */
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.header-menu {
+  background-color: #f5f8f7;
+}
+
+.signup-button {
+  background-color: #1f2937;
+}
+
+.sidebar-background {
+  background-color: #04184d;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #1f2937 !important;
+  display: none;
+}
+
+
+
+.carousel-container {
+  max-width: 100%;
+  /* Adjust as needed */
+  margin: 0 auto;
+  /* Center the carousel */
+}
+
+/* Additional styles for dots */
+.slick-dots {
+  bottom: 10px;
+  /* Adjust the position of the indicators */
+}
+
+.slick-dots li button:before {
+  color: #fff;
+  /* Change the color of the indicators */
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  /* Make the active indicator opaque */
+  color: #000000;
+  /* Change color for active indicator */
+}
+
+.list-none li {
+  margin-top: 20px;
+  ;
+}
+
+/* In styles/globals.css or your CSS file */
+.bg-footer-bg {
+  background-image: url('/images/footer-back.png');
+  /* Replace with your image path */
+  background-size: contain;
+  /* Ensures the image covers the entire div */
+  background-position: bottom;
+  /* Aligns the image to the bottom */
+  background-repeat: no-repeat;
+  /* Prevents the image from repeating */
+  height: 100%;
+  /* Ensures full height of the container */
+}
+
+.special-text {
+  font-family: 'Futurak', sans-serif;
+  font-size: 50px;
+
+}
+
+
+
+.brand-section {
+  margin-top: -8px;
+}
+.franchise-text{
+  font-family: 'Butler', sans-serif;
+  font-size: 50px;
+}
+
+.bg-franchise-bg {
+  background-image: url(/images/footer-back.png);
+  background-size: inherit;
+  background-position: right center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.special-text-2 {
+  font-family: 'Futurak', sans-serif;
+  font-size: 30px;
+}
+.franchise-text-2{
+  font-family: 'Butler', sans-serif;
+  font-size: 35px;
+}
+.franchise-text-3{
+  font-family: 'Butler', sans-serif;
+  font-size: 30px;
+}
+.social-feed-text{
+  font-family: 'Butler', sans-serif;
+  color:#212529;
+}
+
+/* media-quey */
+.welcome-text {
+  font-family: 'Apercu', sans-serif;
+  font-size: 40px !important;
+}
+
+
+@media screen and (max-width: 640px) { /* For screens 425px and smaller */
+  .welcome-text {
+    font-size: 25px !important; 
+    margin-bottom: 0;
+    /* Make text smaller on small screens */
+  }
+
+  .special-text {
+    font-size: 25px !important; /* Ensure the special text also shrinks */
+  }
+  .card-1-class{
+    margin-bottom:0;
+  }
+  .franchise-text{
+    font-size: 24px;
+    margin-top: 0px;
+  }
+  .franchise-section{
+    padding-top:0px;
+    padding-bottom:0px;
+  }
+  .special-text-2{
+    font-size: 25px;
+  }
+  .franchise-text-2{
+    font-size: 25px;
+  }
+  .get-direction-btn{
+    margin-top:0px;
+  }
+  .location-space-dev{
+    padding-top:20px;
+    padding-bottom:0px;
+    flex-direction: column-reverse;
+  }
+  .location-space-dev-1{
+    padding-top:20px;
+    padding-bottom:0px;
+    flex-direction: column;
+  }
+  .sm\:text-left {
+    text-align: left ;
+    font-size: 14px;
+  }
+  .gujranwala-dev{
+    width: 80%;
+    margin: auto;
+  }
+  .get-direction-btn-green{
+    margin-top:0px;
+  }
+  .brand-section-2{
+   padding-top:20px;
+    padding-bottom: 0px;
+  }
+  .footer-row-1{
+    text-align:center;
+  }
+  .footer-las-dev{
+    justify-content: center !important;
+  }
+}
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
