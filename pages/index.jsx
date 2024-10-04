@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from '../components/Carousel';
-import { FaLocationDot, FaLocationPin } from 'react-icons/fa6';
+import { FaLocationDot } from 'react-icons/fa6';
 import { FaPhone } from 'react-icons/fa';
 import { FaArrowRight } from 'react-icons/fa6';
 import LogoCarousel from '../components/LogoCarousel';
