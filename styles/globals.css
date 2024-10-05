@@ -233,6 +233,24 @@ body {
     justify-content: center !important;
   }
 }
+@media screen and (max-width: 768px) { 
+  .fran-text{
+    font-size: 15px;
+  }
+  .special-text-2{
+    font-size: 25px;
+  }
+  .franchise-text-2{
+    font-size: 20px;
+  }
+  .ipad-text{
+    font-size: 13px;
+    align-items: baseline  !important;
+  }
+  .last-social-dev{
+    display:none;
+  }
+}
 
 
 
